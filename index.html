@@ -7,7 +7,7 @@
     <script src="./javascript/app.js"></script>
 </head>
 <body>
-    <h1>New York Times Search</h1>
+    <h1 id="title">New York Times Search</h1>
     <form>
         <h2>Search Paramaters</h2>
         <div>
@@ -26,7 +26,7 @@
             <label>End Year (Optional)</label>
             <input type="text" class="form-control" id="endYear">
         </div>
-        <button id="search" class="bottomButton">Search</button>
+        <button type="button" id="search" class="bottomButton" onclick="handleSearch()">Search</button>
         <button id="clearResults" class="bottomButton">Clear Results</button>
     </form>
     <div id="container">
