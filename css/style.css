@@ -2,10 +2,18 @@
 
 body{
     width: 100%;
+    background: green;
+}
+
+.contain-all{
+    background: white;
 }
 
 .form-container{
-    
+    margin: auto;
+    border: solid 2px black;
+
+
 }
 
 #title{
@@ -16,8 +24,8 @@ body{
 
 }
 
-.form-input-field{
-
+.input-form-field{
+margin: 5px;
 }
 
 

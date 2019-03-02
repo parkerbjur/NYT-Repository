@@ -3,32 +3,34 @@
 <head>
     <title>NY Times Article Search</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./javascript/app.js"></script>
 </head>
 <body>
-    <h1>New York Times Search</h1>
-    <form>
-        <h2>Search Paramaters</h2>
-        <div>
-            <label>Search Term</label>
-            <input type="text" class="form-control" id="searchTerm" >
-        </div>
-        <div>
-            <label>Number of Records to Retrieve</label>
-            <input type="number" class="form-control" id="records">
-        </div>
-        <div>
-            <label>Start Year Date (Optional)</label>
-            <input type="text" class="form-control" id="startYear">
-        </div>
-        <div>
-            <label>End Year (Optional)</label>
-            <input type="text" class="form-control" id="endYear">
-        </div>
-        <button id="search" class="bottomButton">Search</button>
-        <button id="clearResults" class="bottomButton">Clear Results</button>
-    </form>
-
+    <div class="contain-all">
+        <h1>New York Times Search</h1>
+        <form class="form-container">
+            <h2>Search Paramaters</h2>
+            <div class="input-form-field">
+                <label>Search Term</label>
+                <input type="text" class="form-control" id="searchTerm" >
+            </div>
+            <div class="input-form-field">
+                <label>Number of Records to Retrieve</label>
+                <input type="number" class="form-control" id="records">
+            </div>
+            <div class="input-form-field">
+                <label>Start Year Date (Optional)</label>
+                <input type="text" class="form-control" id="startYear">
+            </div>
+            <div class="input-form-field">
+                <label>End Year (Optional)</label>
+                <input type="text" class="form-control" id="endYear">
+            </div>
+            <button id="search" class="bottomButton">Search</button>
+            <button id="clearResults" class="bottomButton">Clear Results</button>
+        </form>
+    </div>
 </body>
 </html>
