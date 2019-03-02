@@ -1,14 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>NY Times Article Search</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./javascript/app.js"></script>
 </head>
 <body>
-    Hello World
+    <div class="contain-all">
+        <div class="title-section">
+        <h1 class="title"><i class="fas fa-newspaper"></i> New York Times Search</h1>
 
-    NYT Team Project
+        </div>
+                <form class="form-container">
+            <h2 class="sub-title">Search Paramaters</h2>
+            <div class="input-form-field">
+                <label>Search Term</label>
+                <input type="text" class="form-control" id="searchTerm" >
+            </div>
+            <div class="input-form-field">
+                <label>Number of Records to Retrieve</label>
+                <input type="number" class="form-control" id="records">
+            </div>
+            <div class="input-form-field">
+                <label>Start Year Date (Optional)</label>
+                <input type="text" class="form-control" id="startYear">
+            </div>
+            <div class="input-form-field">
+                <label>End Year (Optional)</label>
+                <input type="text" class="form-control" id="endYear">
+            </div>
+            <div class="button-bar">
+                <button id="search" class="bottomButton"><i class="fas fa-search"></i> Search</button>
+                <button id="clearResults" class="bottomButton"><i class="fas fa-trash-alt"></i> Clear Results</button>
+            </div>
+            </form>
+        <div id="container">
+            <h2 class="sub-title">Top Articles</h2>
+            <div id="topArticles"></div>
+        </div>
+            <footer>
+                <div class="footer-content">Made With Lots of Love <i class="fas fa-heart"></i> </div>
+            </footer>
+        </div>
+        <div>
+            <label>Start Year Date (Optional)</label>
+            <input type="text" class="form-control" id="startYear">
+        </div>
+        <div>
+            <label>End Year (Optional)</label>
+            <input type="text" class="form-control" id="endYear">
+        </div>
+        <button type="button" id="search" class="bottomButton" onclick="handleSearch()">Search</button>
+        <button id="clearResults" class="bottomButton">Clear Results</button>
+    </form>
+    <div id="container">
+        <h2>Top Articles</h2>
+        <div id="topArticles"></div>
+    </div>
+    <footer>
+        <div>Made With Lots of Love</div>
+    </footer>
 </body>
 </html>
