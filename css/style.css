@@ -1,23 +1,35 @@
-/* all */
 
 body{
     width: 100%;
+    background: rgb(206, 206, 206);
+}
+
+.contain-all{
+    background: white;
+    width: 95%;
+    border-radius: 5px;
 }
 
 .form-container{
-    
+    margin: auto;
 }
 
-#title{
-
+.title{
+    text-align: center;
+    padding: 20px 0;
+}
+.title-section{
+    color: white;
+    border-radius: 5px;
+   background: rgb(45, 45, 194);
 }
 
-#sub-title{
-
+.sub-title{
+    text-align: center;
 }
 
-.form-input-field{
-
+.input-form-field{
+margin: 5px;
 }
 
 

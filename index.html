@@ -3,20 +3,47 @@
 <head>
     <title>NY Times Article Search</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./javascript/app.js"></script>
 </head>
 <body>
-    <h1 id="title">New York Times Search</h1>
-    <form>
-        <h2>Search Paramaters</h2>
-        <div>
-            <label>Search Term</label>
-            <input type="text" class="form-control" id="searchTerm" >
+
+    <div class="contain-all">
+        <div class="title-section">
+        <h1 class="title"><i class="fas fa-newspaper"></i> New York Times Search</h1>
+
         </div>
-        <div>
-            <label>Number of Records to Retrieve</label>
-            <input type="number" class="form-control" id="records">
+                <form class="form-container">
+            <h2 class="sub-title">Search Paramaters</h2>
+            <div class="input-form-field">
+                <label>Search Term</label>
+                <input type="text" class="form-control" id="searchTerm" >
+            </div>
+            <div class="input-form-field">
+                <label>Number of Records to Retrieve</label>
+                <input type="number" class="form-control" id="records">
+            </div>
+            <div class="input-form-field">
+                <label>Start Year Date (Optional)</label>
+                <input type="text" class="form-control" id="startYear">
+            </div>
+            <div class="input-form-field">
+                <label>End Year (Optional)</label>
+                <input type="text" class="form-control" id="endYear">
+            </div>
+            <button id="search" class="bottomButton">Search</button>
+            <button id="clearResults" class="bottomButton">Clear Results</button>
+        </form>
+  
+        <div id="container">
+                <h2>Top Articles</h2>
+                <div id="topArticles"></div>
+            </div>
+            <footer>
+                <div>Made With Lots of Love</div>
+            </footer>
         </div>
         <div>
             <label>Start Year Date (Optional)</label>
