@@ -9,9 +9,11 @@
     <script src="./javascript/app.js"></script>
 </head>
 <body>
+
     <div class="contain-all">
         <div class="title-section">
         <h1 class="title"><i class="fas fa-newspaper"></i> New York Times Search</h1>
+
         </div>
                 <form class="form-container">
             <h2 class="sub-title">Search Paramaters</h2>
@@ -43,5 +45,23 @@
                 <div>Made With Lots of Love</div>
             </footer>
         </div>
+        <div>
+            <label>Start Year Date (Optional)</label>
+            <input type="text" class="form-control" id="startYear">
+        </div>
+        <div>
+            <label>End Year (Optional)</label>
+            <input type="text" class="form-control" id="endYear">
+        </div>
+        <button type="button" id="search" class="bottomButton" onclick="handleSearch()">Search</button>
+        <button id="clearResults" class="bottomButton">Clear Results</button>
+    </form>
+    <div id="container">
+        <h2>Top Articles</h2>
+        <div id="topArticles"></div>
+    </div>
+    <footer>
+        <div>Made With Lots of Love</div>
+    </footer>
 </body>
 </html>
