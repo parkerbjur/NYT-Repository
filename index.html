@@ -7,8 +7,28 @@
     <script src="./javascript/app.js"></script>
 </head>
 <body>
-    Hello World
-    <div>parker's chge</div>
-    <div>second change</div>
+    <h1>New York Times Search</h1>
+    <form>
+        <h2>Search Paramaters</h2>
+        <div>
+            <label>Search Term</label>
+            <input type="text" class="form-control" id="searchTerm" >
+        </div>
+        <div>
+            <label>Number of Records to Retrieve</label>
+            <input type="number" class="form-control" id="records">
+        </div>
+        <div>
+            <label>Start Year Date (Optional)</label>
+            <input type="text" class="form-control" id="startYear">
+        </div>
+        <div>
+            <label>End Year (Optional)</label>
+            <input type="text" class="form-control" id="endYear">
+        </div>
+        <button id="search" class="bottomButton">Search</button>
+        <button id="clearResults" class="bottomButton">Clear Results</button>
+    </form>
+
 </body>
 </html>
