@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <title>NY Times Article Search</title>
     <link rel="stylesheet" href="./css/style.css">
@@ -31,16 +30,17 @@
                 <label>End Year (Optional)</label>
                 <input type="text" class="form-control" id="endYear">
             </div>
-            <button id="search" class="bottomButton">Search</button>
-            <button id="clearResults" class="bottomButton">Clear Results</button>
-        </form>
-  
-        <div id="container">
-                <h2>Top Articles</h2>
-                <div id="topArticles"></div>
+            <div class="button-bar">
+                <button id="search" class="bottomButton"><i class="fas fa-search"></i> Search</button>
+                <button id="clearResults" class="bottomButton"><i class="fas fa-trash-alt"></i> Clear Results</button>
             </div>
+            </form>
+        <div id="container">
+            <h2 class="sub-title">Top Articles</h2>
+            <div id="topArticles"></div>
+        </div>
             <footer>
-                <div>Made With Lots of Love</div>
+                <div class="footer-content">Made With Lots of Love <i class="fas fa-heart"></i> </div>
             </footer>
         </div>
 </body>
